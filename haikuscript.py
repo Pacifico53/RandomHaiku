@@ -2,11 +2,15 @@
 # -*- coding: utf-8 -*-
 
 import random
+from pathlib import Path
 
-file1 = open('haikus.txt', 'r')
+
+path1 = Path(__file__).parent / "haikus.txt"
+file1 = open(path1, 'r')
 Lines = file1.readlines()
 
-file2 = open('translated.txt', 'r')
+path2 = Path(__file__).parent / "translated.txt"
+file2 = open(path2, 'r')
 Lines2 = file2.readlines()
 
 i = 0
